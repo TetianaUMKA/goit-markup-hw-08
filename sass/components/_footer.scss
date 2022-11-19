@@ -1,0 +1,122 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-color-bg);
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    gap: 93px;
+    flex-basis: calc((100% - 279px) / 3);
+}
+
+.footer__address {
+    margin-top: 20px;
+}
+
+.footer-contacts__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color-text);
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.footer-contacts__mailo,
+.footer-contacts__tel {
+    display: block;
+    margin-top: 9px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--contacts-footer);
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.socials-invite {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color-text)
+}
+
+.title-form {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color-text);
+}
+
+.form-subscription {
+    display: flex;
+}
+
+.form-subscription__input {
+    margin-right: 12px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    color: var(--white-color-text);
+    background-color: var(--footer-color-bg);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.subscription-sumbit {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: var(--white-color-text);
+    background-color: var(--accent-color);
+    border-radius: 4px;
+
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--active-button);
+    }
+}
+
+.subscription-sumbit__icon {
+    margin-left: 10px;
+}
