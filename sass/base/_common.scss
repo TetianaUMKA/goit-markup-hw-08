@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--main-color-bg);
+    color: var(--secondary-color-text)
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    border: transparent;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
