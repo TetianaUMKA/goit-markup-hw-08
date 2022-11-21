@@ -1,31 +1,64 @@
 .section-hero {
     text-align: center;
     max-width: 1600px;
-    padding: 200px 0;
+    padding: 118px 0;
     margin-left: auto;
     margin-right: auto;
     background: var(--hero-color-bg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
+    @include retina {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x-mobile.jpg");
+    }
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x-tablet.jpg");
+            }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desktop.jpg");
+        @include retina {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-2x-desktop.jpg");
+            }
+    }
 }
 
 .section-hero__center {
-    max-width: 696px;
+    max-width: 360px;
+
+    @media screen and (min-width: 1200px) {
+        max-width: 696px;
+    }
+    
 }
 
 .section-hero__title {
     margin-bottom: 30px;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 24px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     color: var(--white-color-text);
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .section-hero__button {
-    padding: 10px 32px;
+    padding: 10px 24px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -40,6 +73,11 @@
     &:hover,
     &:focus {
         background-color: var(--active-button);
+    }
+
+    @media screen and (min-width: 1200px)  {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
