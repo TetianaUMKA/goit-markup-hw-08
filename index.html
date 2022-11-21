@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header-container">
         <nav class="header__nav">
           <a href="./index.html" class="logo">Web<span class="logo__part">Studio</span></a>
@@ -48,7 +48,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <main>
       <section class="section-hero">
         <div class="container section-hero__center">
@@ -105,24 +105,39 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section presentation-none">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="presentation-list">
             <li class="presentation-list__item">
-              <img src="./images/box1.jpg" alt="Руки на клавіатурі" width="370" />
+              <img
+                srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                src="./images/box1.jpg"
+                alt="Руки на клавіатурі"
+                width="370"
+              />
               <div class="presentation-list__label">
                 <p class="presentation-list__discr">Десктопні додатки</p>
               </div>
             </li>
             <li class="presentation-list__item">
-              <img src="./images/box2.jpg" alt="У руках смартфон" width="370" />
+              <img
+                srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                src="./images/box1.jpg"
+                alt="У руках смартфон"
+                width="370"
+              />
               <div class="presentation-list__label">
                 <p class="presentation-list__discr">Мобільні додатки</p>
               </div>
             </li>
             <li class="presentation-list__item">
-              <img src="./images/box3.jpg" alt="У руках планшет" width="370" />
+              <img
+                srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                src="./images/box1.jpg"
+                alt="У руках планшет"
+                width="370"
+              />
               <div class="presentation-list__label">
                 <p class="presentation-list__discr">Дизайнерські рішення</p>
               </div>
@@ -135,7 +150,21 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/img1.jpg" alt="Фото дизайнера продукту" width="270" />
+              <picture>
+                <source
+                  srcset="./images/member1-desk.jpg 1x, ./images/member1-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/member1-tab.jpg 1x, ./images/member1-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/member1-mob.jpg 1x, ./images/member1-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/member1-mob.jpg" alt="Фото дизайнера продукту" width="450" />
+              </picture>
               <div class="team-list__discr">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -172,7 +201,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img2.jpg" alt="Фото розробника інтерфейсу" width="270" />
+              <picture>
+                <source
+                  srcset="./images/member2-desk.jpg 1x, ./images/member2-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/member2-tab.jpg 1x, ./images/member2-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/member2-mob.jpg 1x, ./images/member2-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/member2-mob.jpg" alt="Фото розробника інтерфейсу" width="450" />
+              </picture>
               <div class="team-list__discr">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -209,7 +252,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img3.jpg" alt="Фото маркетолога" width="270" />
+              <picture>
+                <source
+                  srcset="./images/member3-desk.jpg 1x, ./images/member3-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/member3-tab.jpg 1x, ./images/member3-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/member3-mob.jpg 1x, ./images/member3-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/member3-mob.jpg" alt="Фото маркетолога" width="450" />
+              </picture>
               <div class="team-list__discr">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -246,7 +303,21 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/img4.jpg" alt="Фото дизайнера інтерфейсу" width="270" />
+              <picture>
+                <source
+                  srcset="./images/member4-desk.jpg 1x, ./images/member4-desk-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/member4-tab.jpg 1x, ./images/member4-tab-2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/member4-mob.jpg 1x, ./images/member4-mob-2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/member4-mob.jpg" alt="Фото дизайнера інтерфейсу" width="450" />
+              </picture>
               <div class="team-list__discr">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -335,7 +406,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <div>
           <a href="./index.html" class="logo">Web<span class="logo__part--inverse">Studio</span></a>
@@ -413,8 +484,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close>
           <svg width="18" height="18">
@@ -471,7 +542,7 @@
           <button type="submit" class="modal-form-sumbit">Відправити</button>
         </form>
       </div>
-    </div>
-    <script src="./js/modal.js"></script>
+    </div> -->
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
