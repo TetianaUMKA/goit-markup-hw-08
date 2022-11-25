@@ -1,0 +1,116 @@
+.mob-menu {
+    @media screen and (max-width: 479px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    padding: 48px 40px;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color-bg);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mob-menu__nav {
+    margin-bottom: auto;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__link {
+    position: relative;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--main-color-text);
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mob-menu__link--active {
+    color: var(--accent-color);
+
+}
+
+.mob-menu__link--active::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -4px;
+    min-width: 100%;
+    min-height: 2px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.menu-contacts {
+    margin-bottom: 64px;
+}
+
+.menu-contacts__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.menu-contacts__tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 29px;
+    }
+}
+
+.menu-contacts__mail {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-text);
+}
+
+.menu-socials-list {
+    display: flex;
+}
+
+.menu-socials-list__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    @media screen and (max-width: 479px) {
+        font-size: 12px;
+    }
+}
+
+.menu-socials-list__item:not(:last-child) {
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials-list__item:not(:first-child) {
+    margin-left: 10px;
+}
