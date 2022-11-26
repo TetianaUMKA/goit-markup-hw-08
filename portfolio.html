@@ -23,18 +23,21 @@
       <div class="container header-container">
         <nav class="header__nav">
           <a href="./index.html" class="logo">Web<span class="logo__part">Studio</span></a>
+          <button class="menu-open-btn" type="button" data-menu-open>
+            <svg aria-label="Вмикач мобільного меню" width="40" height="40">
+              <use href="./images/sprite.svg#icon-menu-open"></use>
+            </svg>
+          </button>
           <ul class="header__list">
-            <li class="header__item"><a href="./index.html" class="header__link">Студія</a></li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__link header__link--active">Портфоліо</a>
-            </li>
+            <li class="header__item"><a href="./index.html" class="header__link header__link--active">Студія</a></li>
+            <li class="header__item"><a href="./portfolio.html" class="header__link">Портфоліо</a></li>
             <li class="header__item"><a href="#" class="header__link">Контакти</a></li>
           </ul>
         </nav>
         <ul class="header-contacts">
           <li class="header-contacts__item">
             <a href="mailto:info@devstudio.com" class="header-contacts__link">
-              <svg class="header-contacts__icon" width="16" height="12">
+              <svg class="header-contacts__icon header-contacts__icon--mail">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -42,11 +45,49 @@
           </li>
           <li class="header-contacts__item">
             <a href="tel:+380961111111" class="header-contacts__link">
-              <svg class="header-contacts__icon" width="10" height="16">
+              <svg class="header-contacts__icon header-contacts__icon--tel">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button class="menu-close-btn" type="button" data-menu-close>
+          <svg aria-label="Вимикач мобільного меню" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu__nav">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link mob-menu__link--active">Студія</a>
+            </li>
+            <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link">Портфоліо</a></li>
+            <li class="mob-menu__item"><a href="#" class="mob-menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a href="tel:+380961111111" class="menu-contacts__tel"> +38 096 111 11 11 </a>
+          </li>
+          <li class="mob-menu-contacts__item">
+            <a href="mailto:info@devstudio.com" class="menu-contacts__mail"> info@devstudio.com </a>
+          </li>
+        </ul>
+        <ul class="menu-socials-list">
+          <li class="menu-socials-list__item">
+            <a href="#" aria-label="Посилання на Instagram" class="menu-socials-list__link">Instagram</a>
+          </li>
+          <li class="menu-socials-list__item">
+            <a href="#" aria-label="Посилання на Twitter" class="menu-socials-list__link">Twitter</a>
+          </li>
+          <li class="menu-socials-list__item">
+            <a href="#" aria-label="Посилання на Facebook" class="menu-socials-list__link">Facebook</a>
+          </li>
+          <li class="menu-socials-list__item">
+            <a href="#" aria-label="Посилання на Linkedin" class="menu-socials-list__link">Facebook</a>
           </li>
         </ul>
       </div>
@@ -248,7 +289,7 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__group">
           <a href="./index.html" class="logo">Web<span class="logo__part--inverse">Studio</span></a>
           <address class="footer__address">
             <ul class="footer-contacts">
@@ -270,7 +311,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__group">
           <p class="socials-invite">Приєднуйтесь</p>
           <ul class="socials-list">
             <li class="socials-list__item">
@@ -303,9 +344,9 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer__form">
           <b class="title-form">Підпишіться на розсилку</b>
-          <form name="form_subscription" class="form-subscription">
+          <form class="form-subscription" name="form_subscription">
             <label>
               <input
                 class="form-subscription__input"
@@ -325,5 +366,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
