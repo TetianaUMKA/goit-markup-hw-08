@@ -173,15 +173,12 @@
 }
 
 .menu-open-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     margin-left: auto;
-    width: 40px;
-    height: 40px;
     padding: 0;
-    background-color: var(--main-color-bg);
-
+    border: none;
+    background-color: transparent;
+    
     @media screen and (min-width: 768px) {
         display: none;
     }
