@@ -131,6 +131,10 @@
     padding: 0;
     margin: 0;
     border: none;
-    background-color: transparent;
-
+    background-color: transparent; 
+    
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
