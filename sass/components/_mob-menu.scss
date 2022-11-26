@@ -12,10 +12,18 @@
     width: 100vw;
     height: 100vh;
     background-color: var(--main-color-bg);
+    opacity: 1;
+
+    @include transition(opacity);
 
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .mob-menu__nav {
@@ -54,7 +62,7 @@
     left: 0;
     bottom: -4px;
     min-width: 100%;
-    min-height: 2px;
+    min-height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
 }
@@ -113,4 +121,16 @@
 
 .menu-socials-list__item:not(:first-child) {
     margin-left: 10px;
+}
+
+.menu-close-btn {
+    display: inline-flex;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+
 }
