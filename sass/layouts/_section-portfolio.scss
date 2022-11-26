@@ -1,11 +1,22 @@
 .portfolio-filter {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    row-gap: 15px;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
 }
 
 .portfolio-filter__button {
+    @media screen and (max-width: 479px) {
+        font-size: 12px;
+    }
     padding: 6px 22px;
     font-style: normal;
     font-weight: 500;
@@ -26,11 +37,26 @@
 }
 
 .portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    // @media screen and (min-width: 1200px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     gap: 30px;
+    // }
+    
 }
 
 .portfolio-list__item {
-    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    } 
 }
