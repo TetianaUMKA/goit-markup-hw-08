@@ -20,6 +20,11 @@
 }
 
 .modal {
+    @media screen and (max-width: 479px) {
+        padding: 30px 15px;
+        width: 310px;
+        height: 549px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,8 +34,6 @@
     height: 609px;
     background-color: var(--main-color-bg);
     border-radius: 4px;
-
-    @include transition(transform);
 
     @media screen and (min-width: 1200px) {
         width: 528px;
@@ -59,6 +62,12 @@
 }
 
 .modal-invitation {
+    @media screen and (max-width: 479px) {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+
     display: block;
     margin-bottom: 10px;
     max-width: 370px;
@@ -82,6 +91,10 @@
 }
 
 .modal-form-item {
+    @media screen and (max-width: 479px) {
+        width: 280px;
+    }
+    
     display: flex;
     flex-direction: column;
     position: relative;
@@ -96,7 +109,6 @@
         margin-bottom: 20px;
     }
 }
-
 
 .modal-form-label {
     margin-bottom: 4px;
@@ -170,11 +182,20 @@
 }
 
 .modal-form-checkbox {
+    @media screen and (max-width: 479px) {
+        margin-bottom: 20px;
+    }
+
     position: relative;
     margin-bottom: 30px;
 }
 
 .checkbox-label {
+    @media screen and (max-width: 479px) {
+        font-size: 9px;
+        line-height: 1.12;
+    }
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -221,6 +242,10 @@
 }
 
 .icon-checkbox {
+    @media screen and (max-width: 479px) {
+        left: 5px;
+    }
+
     display: inline-block;
     position: absolute;
     opacity: 0;
@@ -238,6 +263,10 @@
 }
 
 .modal-form-sumbit {
+    @media screen and (max-width: 479px) {
+        padding: 8px 38px;
+    }
+
     display: block;
     margin-left: auto;
     margin-right: auto;
