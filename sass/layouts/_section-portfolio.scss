@@ -10,7 +10,6 @@
         justify-content: center;
         margin-bottom: 50px;
     }
-    
 }
 
 .portfolio-filter__button {
@@ -37,18 +36,15 @@
 }
 
 .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
     @media screen and (min-width: 768px) {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 30px;
     }
-
-    // @media screen and (min-width: 1200px) {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 30px;
-    // }
-    
 }
 
 .portfolio-list__item {
