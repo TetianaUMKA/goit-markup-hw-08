@@ -1,7 +1,17 @@
+.product-card {
+    height: 100%;
+}
+
 .product-card__link {
     display: inline-block;
 
     @include transition(box-shadow);
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
     &:hover,
     &:focus {
@@ -47,6 +57,10 @@
     border-left: 1px solid var(--card-border-color);
     border-right: 1px solid var(--card-border-color);
     border-bottom: 1px solid var(--card-border-color);
+
+    @media screen and (min-width: 768px) {
+        flex-grow: 1;
+    }
 }
 
 .product-card__name {
