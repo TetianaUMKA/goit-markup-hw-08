@@ -7,6 +7,12 @@
 }
 
 .clients-list__logo {
+    min-height: 92px;
+
+    @media screen and (max-width: 479px) {
+        min-width: 210px;
+    }
+
     @media screen and (min-width: 480px) {
         flex-basis: calc((100% - 30px) / 2);
     }
@@ -16,12 +22,6 @@
     @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
         flex-basis: calc((100% - 150px) / 6);
-    }
-
-    min-height: 92px;
-
-    @media screen and (max-width: 479px) {
-        min-width: 210px;
     }
 }
 
