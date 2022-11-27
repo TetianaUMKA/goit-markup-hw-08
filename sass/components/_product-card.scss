@@ -1,5 +1,7 @@
 .product-card {
-    height: 100%;
+    @media screen and (min-width: 768px) {
+        height: 100%;
+    }
 }
 
 .product-card__link {
@@ -41,15 +43,27 @@
 }
 
 .product-card__label {
+    @media screen and (max-width: 479px) {
+       max-width: 280px;
+       font-size: 16px;
+    }
     position: absolute;
-    min-width: 322px;
+    width: 402px;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 1.6;
     letter-spacing: 0.03em;
     color: var(--white-color-text);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 768px) {
+        width: 306px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 322px;
+    }
 }
 
 .product-card__meta {
