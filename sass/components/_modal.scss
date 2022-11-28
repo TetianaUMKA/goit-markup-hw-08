@@ -21,9 +21,9 @@
 
 .modal {
     @media screen and (max-width: 479px) {
-        padding: 40px 15px 30px 15px;
+        padding: 40px 15px;
         width: 310px;
-        min-height: 549px;
+        height: 549px;
     }
     position: absolute;
     top: 50%;
@@ -183,7 +183,7 @@
 
 .modal-form-checkbox {
     @media screen and (max-width: 479px) {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
 
     position: relative;
