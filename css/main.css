@@ -241,8 +241,8 @@ button {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 12px;
+  right: 12px;
   width: 30px;
   height: 30px;
   background-color: rgba(0, 0, 0, 0);
@@ -291,11 +291,11 @@ button {
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
-  width: 370px;
+  width: 100%;
 }
 @media screen and (max-width: 479px) {
   .modal-form-item {
-    width: 280px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
