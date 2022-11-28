@@ -225,9 +225,9 @@ button {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    padding: 40px 15px 30px 15px;
+    padding: 40px 15px;
     width: 310px;
-    min-height: 549px;
+    height: 549px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -382,7 +382,7 @@ button {
 }
 @media screen and (max-width: 479px) {
   .modal-form-checkbox {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 }
 
