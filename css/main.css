@@ -291,7 +291,6 @@ button {
   flex-direction: column;
   position: relative;
   margin-bottom: 10px;
-  width: 100%;
 }
 @media screen and (max-width: 479px) {
   .modal-form-item {
