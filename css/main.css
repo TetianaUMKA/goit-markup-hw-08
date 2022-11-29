@@ -240,6 +240,7 @@ button {
 .modal-close-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: absolute;
   top: 12px;
   right: 12px;
