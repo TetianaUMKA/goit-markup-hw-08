@@ -6,6 +6,7 @@
 
 .product-card__link {
     display: inline-block;
+    // width: 450px;
 
     @include transition(box-shadow);
 
@@ -13,6 +14,11 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        // width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        // width: 370px;
     }
 
     &:hover,
