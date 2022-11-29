@@ -46,20 +46,23 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 15px;
+    right: 15px;
     width: 30px;
     height: 30px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 50%;
 
-    @include transition(fill);
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-color);
+    @media screen and (min-width: 768px) {
+        @include transition(fill);
+        
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
     }
+    
 }
 
 // top: 8px;
